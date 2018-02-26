@@ -1,22 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Madlibs</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>MMP 310 Group Assignment</title>
+    <meta charset="utf-8">
+    <!--  CUSTOM CSS  -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--  FONT  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
     <div id="container">
+        <h1>untitled</h1>
+        <h2> By <a href="#">Jose Torralba</a> & <a href="#">Jonathan Saona</a></h2>
 
-        <h1>Madlibs</h1>
-        <p>Input a word for each prompt.</p>
+        <!-- First set of Choices -->
+        <div id="questionOne">
+            <p>You're in the middle of a zombie apocalypse, you have to choices to either go inside a shelter or keep walking down the street</p>
 
-        <input type="text" placeholder="Exclamation" id="exclamation">
-        <input type="text" placeholder="Adverb" id="adverb">
-        <input type="text" placeholder="Noun" id="noun">
-        <input type="text" placeholder="Adjective" id="adjective">
+            <div id="buttons">
+                <button id="leftBtn">Go inside Shelter</button>
+                <button id="rightBtn">Keep going</button>
+            </div>
+        </div>
 
+        <!-- Second set of Choices -->
+        <div id="questionTwo">
+            <p>You enter the shelter. To your left there is a bat that can be used to defend yourself.</p>
+            <div id="buttons">
+                <button id="leftBtn2">Take Bat</button>
+                <button id="rightBtn2">Leave Bat</button>
+            </div>
+        </div>
 
-        <button id="submit">Submit</button>
+        <!-- Third set of Choices -->
+        <div id="questionThree">
+            <p>Left or Right 3?</p>
+            <div id="buttons">
+                <button id="leftBtn3">Left</button>
+                <button id="rightBtn3">Right</button>
+            </div>
+        </div>
+
+        <!-- Fourth set of Choices -->
+        <div id="questionFour">
+            <p>Left or Right 4?</p>
+            <div id="buttons">
+                <button id="leftBtn4">Left</button>
+                <button id="rightBtn4">Right</button>
+            </div>
+        </div>
+
+        <!-- Fifth set of Choices -->
+        <div id="questionFive">
+            <p>Left or Right 4?</p>
+            <div id="buttons">
+                <button id="leftBtn5">Left</button>
+                <button id="rightBtn5">Right</button>
+            </div>
+        </div>
+
+        <!-- Outcomes of choices that leads the user dying -->
+        <div id="deathOne">
+            <p>You're Dead 1</p>
+        </div>
+
+        <div id="deathTwo">
+            <p>You're Dead 2</p>
+        </div>
+
+        <div id="deathThree">
+            <p>You're Dead 3</p>
+        </div>
+
+        <div id="deathFour">
+            <p>You're Dead 4</p>
+        </div>
+
+        <div id="deathFive">
+            <p>You're Dead 5</p>
+        </div>
+
 
     </div>
     <script src="app.js"></script>
