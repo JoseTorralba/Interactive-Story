@@ -1,6 +1,4 @@
-// Get answer to the first button
-// Get the user submit button
-
+// JOSE'S CONST
 const leftButton = document.getElementById('leftBtn');
 const rightButton = document.getElementById('rightBtn');
 
@@ -9,6 +7,15 @@ const rightButton2 = document.getElementById('rightBtn2');
 
 const leftButton3 = document.getElementById('leftBtn3');
 const rightButton3 = document.getElementById('rightBtn3');
+
+
+
+// JONATHAN'S CONST
+
+
+
+
+// Jose's set of choices
 
 // Question 1
 leftButton.onclick = function () {
@@ -66,56 +73,27 @@ rightButton3.onclick = function () {
 
 
 
+// Question 4
+leftButton4.onclick = function () {
 
+    const answer = document.getElementById('buttons').value;
 
+    document.getElementById('questionFour').style.display = "block";
+	document.getElementById('questionThree').style.display = "none";
+};
 
+rightButton4.onclick = function () {
 
+    const answer = document.getElementById('buttons').value;
 
-
-
-
-
-
-
-
-
-// Question 2
-// Get User Response When They Click Submit
-
-const qTwoBtn = document.getElementById('qTwoBtn');
-
-qTwoBtn.onclick = function () {
-
-    const answer = document.getElementById('actor').value;
-    const message = document.createElement('p');
-    document.body.appendChild(message);
-
-    // If it's Correct Give Them a Correct Message
-    if (answer == "Chadwick Boseman") {
-
-        message.textContent = "Correct!";
-        qTwoBtn.disabled = true;
-
-    } else {
-
-        message.textContent = "Wrong!";
-        qTwoBtn.disabled = true;
-
-    }
+    document.getElementById('deathFour').style.display = "block";
+	document.getElementById('questionFour').style.display = "none";
 };
 
 
 
 
-
-
-
-
-
-
-
-
-
+// Jonathans's set of choices
 
 
 
