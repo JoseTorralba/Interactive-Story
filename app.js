@@ -56,7 +56,7 @@ leftButton2.onclick = function () {
 	document.getElementById('questionTwo').style.display = "none";
 };
 
-rightButton2.onclick = function () 
+rightButton2.onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('deathTwo').style.display = "block";
@@ -65,14 +65,14 @@ rightButton2.onclick = function ()
 
 
 // CHOICES 3
-leftButton3.onclick = function () 
+leftButton3.onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('questionFour').style.display = "block";
 	document.getElementById('questionThree').style.display = "none";
 };
 
-rightButton3.onclick = function () 
+rightButton3.onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('deathThree').style.display = "block";
