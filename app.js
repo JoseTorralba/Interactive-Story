@@ -88,7 +88,7 @@ leftButton[2].onclick = function () {
 rightButton[2].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
-    document.getElementById('questionFive').style.display = "block";
+    document.getElementById('questionFour').style.display = "block";
 	document.getElementById('questionThree').style.display = "none";
     document.body.style.backgroundImage = img[3] + ", " + gradient[1];
 };
