@@ -1,46 +1,58 @@
-// JOSE'S CONST
-const leftButton = document.getElementById('leftBtn');
-const rightButton = document.getElementById('rightBtn');
+// CONST ARRAY
+const leftButton = [
+    document.getElementById('leftBtn'),
+    document.getElementById('leftBtn2'),
+    document.getElementById('leftBtn3'),
+    document.getElementById('leftBtn4'),
+    document.getElementById('leftBtn5'),
+    document.getElementById('leftBtn6'),
+    document.getElementById('leftBtn7'),
+    document.getElementById('leftBtn8')
+];
 
-const leftButton2 = document.getElementById('leftBtn2');
-const rightButton2 = document.getElementById('rightBtn2');
+const rightButton = [
+    document.getElementById('rightBtn'),
+    document.getElementById('rightBtn2'),
+    document.getElementById('rightBtn3'),
+    document.getElementById('rightBtn4'),
+    document.getElementById('rightBtn5'),
+    document.getElementById('rightBtn6'),
+    document.getElementById('rightBtn7'),
+    document.getElementById('rightBtn8')
+];
 
-const leftButton3 = document.getElementById('leftBtn3');
-const rightButton3 = document.getElementById('rightBtn3');
+// Gradient Background
+var gradient = [
+    "linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%)",
+    "linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%)"
+];
 
-const leftButton4 = document.getElementById('leftBtn4');
-const rightButton4 = document.getElementById('rightBtn4');
+// Background Images
+var img = [
+    "url(img/road.jpg)",
+    "url(img/hotel-entrance.jpg)",
+    "url(img/pt-figure.jpg)",
+    "url(img/roof.jpg)",
+    "url(img/roof-2.jpg)",
+    "url(img/helicopter-zombies.jpg)",
+    "url(img/helicopter.jpg)"
+];
 
-const leftButton5 = document.getElementById('leftBtn5');
-const rightButton5 = document.getElementById('rightBtn5');
+// Current Img & Gradient for First Choice
+document.body.style.backgroundImage = img[0] + ", " + gradient[0];
 
-// JONATHAN'S CONST
-const leftButton6 = document.getElementById('leftBtn6');
-const rightButton6 = document.getElementById('rightBtn6');
-
-const leftButton7 = document.getElementById('leftBtn7');
-const rightButton7 = document.getElementById('rightBtn7');
-
-const leftButton8 = document.getElementById('leftBtn8');
-const rightButton8 = document.getElementById('rightBtn8');
-
-const leftButton9 = document.getElementById('leftBtn9');
-const rightButton9 = document.getElementById('rightBtn9');
-
-const leftButton10 = document.getElementById('leftBtn10');
-const rightButton10 = document.getElementById('rightBtn10');
 
 // JOSE'S SET OF CHOICES
-
-// CHOICES 1
-leftButton.onclick = function () {
+// CHOICE 1
+leftButton[0].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('questionTwo').style.display = "block";
 	document.getElementById('questionOne').style.display = "none";
+    document.body.style.backgroundImage = img[1] + ", " + gradient[1];  
 };
 
-rightButton.onclick = function () {
+rightButton[0].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('deathOne').style.display = "block";
@@ -48,47 +60,49 @@ rightButton.onclick = function () {
 };
 
 
-// CHOICES 2
-leftButton2.onclick = function () {
-    const answer = document.getElementById('buttons').value;
-
-    document.getElementById('questionThree').style.display = "block";
-	document.getElementById('questionTwo').style.display = "none";
-};
-
-rightButton2.onclick = function () {
+// CHOICE 2
+leftButton[1].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('deathTwo').style.display = "block";
 	document.getElementById('questionTwo').style.display = "none";
 };
 
-
-// CHOICES 3
-leftButton3.onclick = function () {
+rightButton[1].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
-    document.getElementById('questionFour').style.display = "block";
-	document.getElementById('questionThree').style.display = "none";
+    document.getElementById('questionThree').style.display = "block";
+	document.getElementById('questionTwo').style.display = "none";
+    document.body.style.backgroundImage = img[2] + ", " + gradient[1];
 };
 
-rightButton3.onclick = function () {
+
+// CHOICE 3
+leftButton[2].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('deathThree').style.display = "block";
 	document.getElementById('questionThree').style.display = "none";
 };
 
+rightButton[2].onclick = function () {
+    const answer = document.getElementById('buttons').value;
 
-// CHOICES 4
-leftButton4.onclick = function () {
+    document.getElementById('questionFive').style.display = "block";
+	document.getElementById('questionThree').style.display = "none";
+    document.body.style.backgroundImage = img[3] + ", " + gradient[1];
+};
+
+
+// CHOICE 4
+leftButton[3].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('questionFive').style.display = "block";
 	document.getElementById('questionFour').style.display = "none";
 };
 
-rightButton4.onclick = function () {
+rightButton[3].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('deathFour').style.display = "block";
@@ -96,33 +110,34 @@ rightButton4.onclick = function () {
 };
 
 
-// CHOICES 5
-leftButton5.onclick = function () {
-    const answer = document.getElementById('buttons').value;
-
-    document.getElementById('questionSix').style.display = "block";
-	document.getElementById('questionFive').style.display = "none";
-};
-
-rightButton5.onclick = function () {
+// JONATHAN'S SET OF CHOICES
+// CHOICE 5
+leftButton[4].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('deathFive').style.display = "block";
 	document.getElementById('questionFive').style.display = "none";
 };
 
+rightButton[4].onclick = function () {
+    const answer = document.getElementById('buttons').value;
 
-// JONATHAN'S SET OF CHOICES
+    document.getElementById('questionSix').style.display = "block";
+	document.getElementById('questionFive').style.display = "none";
+    document.body.style.backgroundImage = img[4] + ", " + gradient[0];
+};
 
-// CHOICES 6
-leftButton6.onclick = function () {
+
+// CHOICE 6
+leftButton[5].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('questionSeven').style.display = "block";
 	document.getElementById('questionSix').style.display = "none";
+    document.body.style.backgroundImage = img[5] + ", " + gradient[0];
 };
 
-rightButton6.onclick = function () {
+rightButton[5].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('deathSix').style.display = "block";
@@ -130,69 +145,35 @@ rightButton6.onclick = function () {
 };
 
 
-// CHOICES 7
-leftButton7.onclick = function () {
-    const answer = document.getElementById('buttons').value;
-
-    document.getElementById('questionEight').style.display = "block";
-	document.getElementById('questionSeven').style.display = "none";
-};
-
-rightButton7.onclick = function () {
+// CHOICE 7
+leftButton[6].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('deathSeven').style.display = "block";
 	document.getElementById('questionSeven').style.display = "none";
 };
 
-
-// CHOICES 8
-leftButton8.onclick = function () {
+rightButton[6].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
-    document.getElementById('questionNine').style.display = "block";
-	document.getElementById('questionEight').style.display = "none";
+    document.getElementById('questionEight').style.display = "block";
+	document.getElementById('questionSeven').style.display = "none";
 };
 
-rightButton8.onclick = function () {
+
+// ENDING
+leftButton[7].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('deathEight').style.display = "block";
 	document.getElementById('questionEight').style.display = "none";
+
 };
 
-
-// CHOICES 9
-leftButton9.onclick = function () {
-    const answer = document.getElementById('buttons').value;
-
-    document.getElementById('questionTen').style.display = "block";
-	document.getElementById('questionNine').style.display = "none";
-};
-
-rightButton9.onclick = function () {
-    const answer = document.getElementById('buttons').value;
-
-    document.getElementById('deathNine').style.display = "block";
-	document.getElementById('questionNine').style.display = "none";
-};
-
-
-// CHOICES 10
-leftButton10.onclick = function () {
+rightButton[7].onclick = function () {
     const answer = document.getElementById('buttons').value;
 
     document.getElementById('ending').style.display = "block";
-	document.getElementById('questionTen').style.display = "none";
+	document.getElementById('questionEight').style.display = "none";
+    document.body.style.backgroundImage = img[6] + ", " + gradient[0];
 };
-
-rightButton10.onclick = function () {
-    const answer = document.getElementById('buttons').value;
-
-    document.getElementById('deathTen').style.display = "block";
-	document.getElementById('questionTen').style.display = "none";
-};
-
-
-
-
